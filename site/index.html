@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biblioteca</title>
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('ms-theme'),s=localStorage.getItem('ms-size');if(t==='light'||t==='dark'||t==='base')d.setAttribute('data-theme',t);if(s==='s'||s==='l')d.setAttribute('data-size',s);}catch(e){}})();</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">Biblioteca</a>
+<span class="spacer"></span>
+<div class="settings">
+<button class="tb-btn" id="settings-btn" aria-expanded="false" aria-controls="settings-pop" title="Aspetto e dimensione del testo">Aa</button>
+<div class="pop" id="settings-pop" role="dialog" aria-label="Aspetto e dimensione del testo">
+<h4>Tema</h4>
+<div class="group">
+<button data-theme-btn="auto" aria-pressed="false">Auto</button>
+<button data-theme-btn="light" aria-pressed="false">Chiaro</button>
+<button data-theme-btn="dark" aria-pressed="false">Scuro</button>
+<button data-theme-btn="base" aria-pressed="false">Base</button>
+</div>
+<h4>Testo</h4>
+<div class="group two">
+<button data-size-btn="s" aria-pressed="false">Piccolo</button>
+<button data-size-btn="m" aria-pressed="false">Medio</button>
+<button data-size-btn="l" aria-pressed="false">Grande</button>
+</div>
+<p class="hint">Auto segue il tema del dispositivo. Base è lo stile semplice originale, senza barra laterale.</p>
+</div></div>
+</header>
+<main class="content">
+<div class="wrap index-main">
+<header class="hero"><h1>Biblioteca</h1><p class="subtitle">Due libri da leggere. Il tema chiaro, scuro o base vale per entrambi.</p></header>
+<div class="library">
+<article class="book-card">
+<a class="book-cover" href="psicologia.html"><img src="img/cover.png" alt="La mente studiata"></a>
+<div class="book-info"><h2><a href="psicologia.html">La mente studiata</a></h2>
+<p class="meta">Yasser Oudabashi</p>
+<p>Enciclopedia di psicologia in 13 parti e 83 capitoli, con appendici.</p>
+<p class="chips"><a class="chip" href="psicologia.html" lang="it">Italiano</a></p></div>
+</article>
+<article class="book-card">
+<a class="book-cover" href="prophet/it/index.html" data-prophet-link><img src="prophet/img/cover.jpg" alt="Il Profeta"></a>
+<div class="book-info"><h2><a href="prophet/it/index.html" data-prophet-link>Il Profeta · The Prophet · Le Prophète</a></h2>
+<p class="meta">Kahlil Gibran, 1923</p>
+<p>Ventotto prose poetiche, con le illustrazioni dell'edizione originale. Si legge in italiano, inglese e francese.</p>
+<p class="chips"><a class="chip" data-lang="it" href="prophet/it/index.html" hreflang="it" lang="it">Italiano</a><a class="chip" data-lang="en" href="prophet/en/index.html" hreflang="en" lang="en">English</a><a class="chip" data-lang="fr" href="prophet/fr/index.html" hreflang="fr" lang="fr">Français</a></p></div>
+</article>
+</div>
+</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
